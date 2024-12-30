@@ -1,0 +1,1 @@
+def id ( int id , int id ) { int id , id , id ; id := id + id ; id := id + id * id ; id := id - id ; return id ; } def id ( int id ) { if id <> num { / / id DESCONHECIDO id id DESCONHECIDO id id id id id DESCONHECIDO DESCONHECIDO id return id * id ; } else { return id * id ; } } def id ( ) { int id , id , id ; id := num ; id := num ; id := id ( id , id ) ; print id ; return ; } 

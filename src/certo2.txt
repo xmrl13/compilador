@@ -1,0 +1,46 @@
+def func1(int A, int B) {
+    int C, D, R;
+    C := A + B;
+    D := A + B * C;
+    R := C - D;
+    return R;
+}
+
+def square(int a) {
+    if (a <> 0) {
+        return a * a;
+    }
+    else {
+        return 0;
+    }
+}
+
+def multiply(int X, int Y) {
+    int result;
+    result := X * Y;
+    return result;
+}
+
+def principal() {
+    int X, Y, Z, R, S, T;
+    X := 4;
+    Y := 5;
+    Z := 10;
+
+    R := func1(X, Y);
+    print R;
+
+    S := square(Z);
+    print S;
+
+    if (R > S) {
+        T := multiply(R, S);
+        print T;
+    }
+    else {
+        T := R + S;
+        print T;
+    }
+
+    return;
+}

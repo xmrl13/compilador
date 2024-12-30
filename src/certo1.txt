@@ -1,0 +1,30 @@
+def func1(int A, int B) {
+    int C, R;
+    C := A + B;
+    if (C == 10) {
+        R := 1;
+    }
+    else {
+        R := 0;
+    }
+    return R;
+}
+
+def principal() {
+    int X, Y, Z, R;
+    X := 5;
+    Y := 5;
+    Z := 10;
+
+    R := func1(X, Y);
+    print R;
+
+    if (R == 1) {
+        print Z;
+    }
+    else {
+        print X;
+    }
+
+    return;
+}

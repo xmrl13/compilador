@@ -1,0 +1,48 @@
+def func1(int A, int B) {
+    int C, D, R;
+    C := A + B;
+    D := A + B * C;
+    R := C - D;
+    return R;
+}
+
+def square(int a) {
+    if (a <> 0) {
+        return a * a;
+    }
+    else {
+        return a * a;
+    }
+}
+
+def multiply(int X, int Y) {
+    int result;
+    result := X * Y;
+    return result;
+}
+
+def principal() {
+    int X, Y, Z, R, S, T;
+    X := 4;
+    Y := 5;
+    R := func1(X, Y);
+    print R;
+
+    S := square(Z);  // Errado: Z não foi inicializado antes de ser usado
+    print S;
+
+    if R > S {       // Errado: condição do `if` sem parênteses
+        T := multiply(R, S);
+        print T;
+    }
+    else {
+        print T;      // Errado: T não foi inicializado antes de ser usado
+    }
+
+    while (X < 10) {  // Errado: `while` não faz parte da gramática
+        X := X + 1;
+    }
+
+    print (R + S + T);  // Errado: T pode não ter valor definido
+    return;
+}
