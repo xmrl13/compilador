@@ -1,5 +1,20 @@
-Este projeto consiste na implementação de um analisador léxico e sintático para uma linguagem personalizada, utilizando Java. O analisador léxico foi gerado com o auxílio da ferramenta JFLEX, baseado no arquivo lexer.jflex. O analisador sintático foi implementado manualmente, considerando uma gramática revisada para a linguagem. A gramática original apresentava problemas como recursão à esquerda, que dificultava sua utilização com analisadores sintáticos do tipo LL(1), e ambiguidade em identificadores, resultando em dificuldades para diferenciar palavras-chave de identificadores. Esses problemas foram corrigidos na gramática revisada, que está disponível no arquivo gramatica-final.pdf.
+# Analisador Léxico e Sintático para uma Linguagem Personalizada
 
-Para compilar o projeto, navegue até o diretório /src no terminal e execute o comando javac AnalisadorLexico.java AnalisadorSintatico.java Token.java TokenUtils.java para compilar os arquivos necessários. Em seguida, para executar o analisador sintático, permaneça no diretório /src e execute o comando java AnalisadorSintatico <SEU ARQUIVO DE INPUT>.txt, substituindo <SEU ARQUIVO DE INPUT>.txt pelo arquivo de entrada que deseja analisar. Foram disponibilizados dois arquivos de exemplo corretos, que estão em conformidade com a gramática revisada, e dois exemplos incorretos, que exibem erros que serão capturados pelo analisador sintático.
+Este projeto implementa um analisador léxico e sintático para uma linguagem personalizada utilizando **Java**. O analisador léxico foi gerado com o auxílio da ferramenta **JFLEX**, baseado no arquivo `lexer.jflex`. O analisador sintático foi implementado manualmente com base em uma gramática revisada.
 
-Como referência, um link para demonstração de árvores de derivação pode ser encontrado em: https://www.cs.princeton.edu/courses/archive/spring20/cos320/LL1/.
+## Problemas Resolvidos pela Gramática Revisada
+
+A gramática original apresentava os seguintes problemas:
+- **Recursão à esquerda**, que dificultava sua utilização com analisadores sintáticos do tipo LL(1).
+- **Ambiguidade em identificadores**, dificultando a diferenciação entre palavras-chave e identificadores.
+
+Esses problemas foram corrigidos na gramática revisada, que está disponível no arquivo [`gramatica-final.pdf`](./src/gramatica-final.pdf).
+
+## Compilação
+
+Para compilar o projeto, siga os passos abaixo:
+
+1. Navegue até o diretório `/src` no terminal.
+2. Execute o comando a seguir para compilar os arquivos necessários:
+   ```bash
+   javac AnalisadorLexico.java AnalisadorSintatico.java Token.java TokenUtils.java
